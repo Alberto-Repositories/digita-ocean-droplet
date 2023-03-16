@@ -35,6 +35,8 @@ jobs:
         
       - name: Deploy
         uses: deployphp/action@master
-        with: 
+        with:
+          username: ${{ secrets.SERVER_USERNAME }}
+          password: ${{ secrets.SERVER_PASSWORD }}
           dep: deploy ${{ github.event.inputs.deploy_env }} -v
  
