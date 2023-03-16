@@ -9,7 +9,7 @@ hosts:
   droplet-alberto:
     remote_user: root
     hostname: alberto-laravel.shop
-    deploy_path: '/var/wwww/{{hostname}}'
+    deploy_path: '/var/www/{{hostname}}'
 
 tasks:
   deploy:
